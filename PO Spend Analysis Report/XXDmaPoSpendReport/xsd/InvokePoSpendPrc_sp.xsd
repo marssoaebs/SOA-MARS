@@ -1,0 +1,58 @@
+<schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/sp/InvokePoSpendPrc" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:db="http://xmlns.oracle.com/pcbpel/adapter/db/sp/InvokePoSpendPrc" elementFormDefault="qualified">
+   <element name="InputParameters">
+      <complexType>
+         <sequence>
+            <element name="P_SPEND_PERIOD_FROM" type="string" db:index="1" db:default="true" db:type="VARCHAR2" minOccurs="0" nillable="true"/>
+            <element name="P_SPEND_PERIOD_TO" type="string" db:index="2" db:default="true" db:type="VARCHAR2" minOccurs="0" nillable="true"/>
+            <element name="P_OPERATING_UNIT" type="string" db:index="3" db:default="true" db:type="VARCHAR2" minOccurs="0" nillable="true"/>
+         </sequence>
+      </complexType>
+   </element>
+   <element name="OutputParameters">
+      <complexType>
+         <sequence>
+            <element name="X_RETURN_STATUS" type="string" db:index="4" db:type="VARCHAR2" minOccurs="0" nillable="true"/>
+            <element name="X_RETURN_MSG" type="string" db:index="5" db:type="VARCHAR2" minOccurs="0" nillable="true"/>
+            <element name="P_PO_SPEND_TAB" type="db:APPS.XXDMA_PO_SPEND_TAB" db:index="6" db:type="Array" minOccurs="0" nillable="true"/>
+         </sequence>
+      </complexType>
+   </element>
+   <complexType name="APPS.XXDMA_PO_SPEND_TAB">
+      <sequence>
+         <element name="P_PO_SPEND_TAB_ITEM" type="db:APPS.XXDMA_PO_SPEND_OBJ" db:type="Struct" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+      </sequence>
+   </complexType>
+   <complexType name="APPS.XXDMA_PO_SPEND_OBJ">
+      <sequence>
+         <element name="SPENDVALUE" type="decimal" db:type="NUMBER" minOccurs="0" nillable="true"/>
+         <element name="SPENDCATEGORY" db:type="VARCHAR2" minOccurs="0" nillable="true">
+            <simpleType>
+               <restriction base="string">
+                  <maxLength value="100"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="SPEND_PERIOD_FROM" db:type="VARCHAR2" minOccurs="0" nillable="true">
+            <simpleType>
+               <restriction base="string">
+                  <maxLength value="100"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="SPEND_PERIOD_TO" db:type="VARCHAR2" minOccurs="0" nillable="true">
+            <simpleType>
+               <restriction base="string">
+                  <maxLength value="100"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="OPERATING_UNIT" db:type="VARCHAR2" minOccurs="0" nillable="true">
+            <simpleType>
+               <restriction base="string">
+                  <maxLength value="100"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </sequence>
+   </complexType>
+</schema>

@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<client:processResponse xmlns:client="http://xmlns.oracle.com/XXDMA/XXDmaPoSpendReport/BPELPoSpendReport">
+   <client:ReturnMessage>X_RETURN_MSG2</client:ReturnMessage>
+   <client:PoSpendResponse>
+      <client:SPENDVALUE>3</client:SPENDVALUE>
+      <client:SPENDCATEGORY>string4</client:SPENDCATEGORY>
+      <client:SPEND_PERIOD_FROM>string6</client:SPEND_PERIOD_FROM>
+      <client:SPEND_PERIOD_TO>string8</client:SPEND_PERIOD_TO>
+      <client:OPERATING_UNIT>string10</client:OPERATING_UNIT>
+   </client:PoSpendResponse>
+   <client:PoSpendResponse>
+      <client:SPENDVALUE>12</client:SPENDVALUE>
+      <client:SPENDCATEGORY>string13</client:SPENDCATEGORY>
+      <client:SPEND_PERIOD_FROM>string15</client:SPEND_PERIOD_FROM>
+      <client:SPEND_PERIOD_TO>string17</client:SPEND_PERIOD_TO>
+      <client:OPERATING_UNIT>string19</client:OPERATING_UNIT>
+   </client:PoSpendResponse>
+   <client:PoSpendResponse>
+      <client:SPENDVALUE>21</client:SPENDVALUE>
+      <client:SPENDCATEGORY>string22</client:SPENDCATEGORY>
+      <client:SPEND_PERIOD_FROM>string24</client:SPEND_PERIOD_FROM>
+      <client:SPEND_PERIOD_TO>string26</client:SPEND_PERIOD_TO>
+      <client:OPERATING_UNIT>string28</client:OPERATING_UNIT>
+   </client:PoSpendResponse>
+</client:processResponse>

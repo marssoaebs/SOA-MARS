@@ -1,0 +1,13 @@
+<adapter-config name="InvokePoSpendPrc" adapter="Database Adapter" wsdlLocation="InvokePoSpendPrc.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/DB/OracleEBS" UIConnectionName="SNET_MARS" adapterRef=""/>
+  <endpoint-interaction portType="InvokePoSpendPrc_ptt" operation="InvokePoSpendPrc">
+    <interaction-spec className="oracle.tip.adapter.db.DBStoredProcedureInteractionSpec">
+      <property name="PackageName" value="XXDMA_PO_SPEND_REP_PKG"/>
+      <property name="ProcedureName" value="XXDMA_PO_GET_SPEND_PRC"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+    <output/>
+  </endpoint-interaction>
+
+</adapter-config>

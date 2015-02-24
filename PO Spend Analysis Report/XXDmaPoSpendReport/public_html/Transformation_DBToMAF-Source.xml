@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OutputParameters xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/sp/InvokePoSpendPrc">
+   <X_RETURN_STATUS>X_RETURN_STATUS1</X_RETURN_STATUS>
+   <X_RETURN_MSG>X_RETURN_MSG2</X_RETURN_MSG>
+   <P_PO_SPEND_TAB>
+      <P_PO_SPEND_TAB_ITEM>
+         <SPENDVALUE>3</SPENDVALUE>
+         <SPENDCATEGORY>string4</SPENDCATEGORY>
+         <SPEND_PERIOD_FROM>string6</SPEND_PERIOD_FROM>
+         <SPEND_PERIOD_TO>string8</SPEND_PERIOD_TO>
+         <OPERATING_UNIT>string10</OPERATING_UNIT>
+      </P_PO_SPEND_TAB_ITEM>
+      <P_PO_SPEND_TAB_ITEM>
+         <SPENDVALUE>12</SPENDVALUE>
+         <SPENDCATEGORY>string13</SPENDCATEGORY>
+         <SPEND_PERIOD_FROM>string15</SPEND_PERIOD_FROM>
+         <SPEND_PERIOD_TO>string17</SPEND_PERIOD_TO>
+         <OPERATING_UNIT>string19</OPERATING_UNIT>
+      </P_PO_SPEND_TAB_ITEM>
+      <P_PO_SPEND_TAB_ITEM>
+         <SPENDVALUE>21</SPENDVALUE>
+         <SPENDCATEGORY>string22</SPENDCATEGORY>
+         <SPEND_PERIOD_FROM>string24</SPEND_PERIOD_FROM>
+         <SPEND_PERIOD_TO>string26</SPEND_PERIOD_TO>
+         <OPERATING_UNIT>string28</OPERATING_UNIT>
+      </P_PO_SPEND_TAB_ITEM>
+   </P_PO_SPEND_TAB>
+</OutputParameters>

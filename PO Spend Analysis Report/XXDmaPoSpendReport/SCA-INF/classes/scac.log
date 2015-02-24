@@ -1,0 +1,26 @@
+Feb 19, 2015 2:46:28 PM oracle.mds
+NOTIFICATION: PManager instance is created without multitenancy support as JVM flag "oracle.multitenant.enabled" is not set to enable multitenancy support.
+Feb 19, 2015 2:46:28 PM oracle.security.jps.internal.config.xml.XmlConfigurationFactory initDefaultConfiguration
+SEVERE: java.io.FileNotFoundException: .\config\jps-config.xml (The system cannot find the path specified)
+Feb 19, 2015 2:46:28 PM oracle.mds
+NOTIFICATION: Auditing is disabled for component MDS.
+Feb 19, 2015 2:46:29 PM oracle.fabric.common.wsdl.SchemaManager isIncrementalBuildSupported
+INFO: XMLSchema incremental build enabled.
+Feb 19, 2015 2:46:29 PM com.collaxa.cube.CubeLogger info
+INFO: validating "BPELPoSpendReport.bpel" ...
+Feb 19, 2015 2:46:29 PM oracle.integration.platform.blocks.FabricConfigManager <clinit>
+WARNING: JRF is unable to determine the current application server platform.
+Feb 19, 2015 2:46:29 PM oracle.integration.platform.blocks.WLSPlatformConfigurationProvider <clinit>
+WARNING: JRF is unable to determine the current application server platform.
+node class name com.collaxa.cube.engine.ext.bpel.v1.blocks.BPELSequenceBlock
+node class name com.collaxa.cube.engine.ext.bpel.v1.blocks.BPELCatchAllBlock
+Feb 19, 2015 2:46:29 PM com.collaxa.cube.CubeLogger info
+INFO: Composed "BPELPoSpendReport" in 47.2 milliseconds [nodes 10=0+10, 212.0 nodes/sec]
+Feb 19, 2015 2:46:31 PM com.collaxa.cube.CubeLogger info
+INFO: Compiled "BPELPoSpendReport" in 2.337 seconds
+Feb 19, 2015 2:46:31 PM com.collaxa.cube.CubeLogger info
+INFO: Gathered 3 files in 1.0 milliseconds
+
+Feb 19, 2015 2:46:31 PM com.collaxa.cube.CubeLogger info
+INFO: Packaged "BPELPoSpendReport" in 11.3 milliseconds
+
